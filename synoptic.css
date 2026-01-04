@@ -1,0 +1,40 @@
+body {
+  background:#0f172a;
+  color:white;
+  font-family:Segoe UI;
+  text-align:center;
+}
+
+#synoptic {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  margin:40px;
+}
+
+.block {
+  width:150px;
+  padding:25px;
+  border-radius:14px;
+  background:#020617;
+  box-shadow:0 0 15px #000;
+  transition:background .3s;
+}
+
+.pipe {
+  width:90px;
+  height:8px;
+  background:linear-gradient(90deg,#334155,#94a3b8,#334155);
+  background-size:200% 100%;
+  animation:flow 1s linear infinite;
+}
+
+@keyframes flow {
+  from { background-position:0% 0; }
+  to   { background-position:200% 0; }
+}
+
+input {
+  width:60%;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Synoptique électrique</title>
+<link rel="stylesheet" href="synoptic.css">
+</head>
+<body>
+
+<h1>Synoptique électrique – Dymola</h1>
+
+<div id="synoptic">
+
+  <div class="block" id="voltage">
+    Source<br><span></span>
+  </div>
+
+  <div class="pipe"></div>
+
+  <div class="block" id="diode">
+    Diode<br><span></span>
+  </div>
+
+  <div class="pipe"></div>
+
+  <div class="block" id="capacitor">
+    Condensateur<br><span></span>
+  </div>
+
+  <div class="pipe"></div>
+
+  <div class="block" id="load">
+    Charge<br><span></span>
+  </div>
+
+</div>
+
+<input id="time-slider" type="range" value="0">
+<span id="time-value">t = 0</span>
+<br>
+Entrer un temps exact :
+<input id="time-input" type="number" step="any">
+<button onclick="jumpToTime()">OK</button>
+
+
+<script src="synoptic.js"></script>
+</body>
+</html>
